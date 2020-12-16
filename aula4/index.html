@@ -1,0 +1,123 @@
+<!--Projeto criando um formulário de jogos, aula ministrada pela professora Juliana Martins, curso Front-end SENAC -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEEGames</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body style="background-color:black;color:white;">
+    <div id="principal">
+        <img id="logo" src="imagens/foto-generica-de-games--controle-de-videogame-headphone-teclado-mouse-1575320464608_v2_1920x1363.jpg" height=500px;>
+        <h1 id="titulo">Cadastro de Jogos SEEGames</h1>
+        <table>
+            <caption>Jogos Cadastrados</caption>
+            <tr>
+                <th>Nome</th>
+                <th>Ano de lançamento</th>
+                <th>Disponibilidade</th>
+                <th>Versão</th>
+                <th colspan="2">Sistemas Operacionais</th>
+            </tr>
+            <tr>
+                <td>Fall Guys</td>
+                <td>2020</td>
+                <td>Online</td>
+                <td>Ultimate</td>
+                <td>Windows</td>
+                <td>Playstation</td>
+            </tr>
+            <tr>
+                <td>CS GO</td>
+                <td>2020</td>
+                <td>Online</td>
+                <td>Free</td>
+                <td>Windows</td>
+                <td>Linux</td>
+            </tr>
+
+        </table>
+        <!--<ol>
+        <li>Fall Guys</li>
+        <li>CS Go</li>
+        <li>Cyberpunk 2077</li>
+    </ol> -->
+        <br>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Dados básicos do jogo
+                    <fiedset>
+                </legend>
+                </fildset>
+                <label for="nomeJogo">Nome do jogo:</label>
+                <input type="text" placeholder="Escreva o nome do jogo" name="nomeJogo" id="nomeJogo">
+                <br>
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao" rows="3" cols="20"></textarea>
+                <br>
+
+
+                <label for="ano">Ano de lançamento</label>
+                <input type="date" id="ano" name="ano">
+                <br>
+                <label for="emailDev">E-mail do desenvolvedor:</label>
+                <input type="email" id="emailDev" name="emailDev">
+                <br>
+
+                <label for="senhaDev">Senha do desenvolvedor:</label>
+                <input type="password" id="senhaDev" name="senhaDev">
+                <br>
+                <label for="idadeMin">Idade mínima</label>
+                <input type="number" id="idadeMin" min="0" max="200" name="idadeMin">
+                <br>
+                <label for="versao">Versão</label>
+                <select id="versao" name="versao">
+                <option value="ultimate">Ultimate</option>
+                <option value="premium">Premium</option>
+                <option value="free">Gratuito</option>
+            </select>
+            </fieldset>
+
+        </form>
+
+
+        <fieldset>
+            <legend>Sistemas Operacionais:</legend>
+            <input type="checkbox" id="windows" name="windows" value="windows">
+            <label for="windows">Windows</label>
+
+            <input type="checkbox" id="linux" name="linux" value="linux">
+            <label for="Linux">Linux</label>
+            <input type="checkbox" id="playstation" name="playstation" value="playstation">
+            <label for="playstation">Playstation 4</label>
+        </fieldset>
+        <fieldset>
+            <legend>Disponibilidade</legend>
+            <input type="radio" id="online" name="disponivel" value="online">
+            <label for="online">Online</label>
+            <input type="radio" id="offline" name="disponivel" value="offline">
+            <label for="offline">Offline</label>
+            <br>
+            <br>
+            <input type="submit" value="Cadastrar" style="background-color: green; border:none; color:white; height:30px">
+            <input type="reset" value="Limpar" style="background-color:red; border:none; color:white; height:30px">
+        </fieldset>
+        <img src="imagens/imagem 2.png">
+        <br>
+        <br>
+        <a href="sobre.html">Sobre o site</a>
+        <br>
+        <br>
+
+        <a href="https://store.steampowered.com/?l=portuguese" target="_blank"> Visite a Steam para mais informações</a>
+    </div>
+</body>
+
+
+</html>
